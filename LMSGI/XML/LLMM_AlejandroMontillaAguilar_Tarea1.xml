@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<concesionario>
+
+    <empresa nombre="AutomociónSL">
+        <coches>
+            <num_vastidor> BAST-001234 </num_vastidor>
+
+            <marca> BMW </marca>
+
+            <modelo> M4 G82 </modelo>
+
+            <num_puertas> 3 </num_puertas>
+
+            <fecha_fabric.> 20/06/2021 </fecha_fabric.>
+
+            <id_concesionario> CNS-001 </id_concesionario>
+        </coches>
+
+        <concesionarios>
+            <id_concesionario> CNS-001 </id_concesionario>
+
+            <cod_postal> 23000 </cod_postal>
+
+            <ciudad> JAÉN </ciudad>
+
+            <num_coches> 30 </num_coches>
+
+            <id_empleado.> EMP001 </id_empleado.>
+        </concesionarios>
+
+        <empleados>
+            <id_emple.> EMP001 </id_emple.>
+
+            <nombre> Juan  </nombre>
+
+            <ap1> Pérez </ap1>
+
+            <ap2>  González </ap2>
+
+            <telefono> 698577447 </telefono>
+
+            <fech_nacim.> 15/03/1985 </fech_nacim.>
+        </empleados>
+
+        <ventas>
+            <id_ventas> VEN001 </id_ventas>
+
+            <id_coche> BAST-001234 </id_coche>
+
+            <id_conce.> CNS-001 </id_conce.>
+
+            <id_empleado> EMP001 </id_empleado>
+
+            <fecha_venta.> 01/01/2025 </fecha_venta.>
+
+            <precio_venta> 160.000$ </precio_venta>
+        </ventas>
+
+    </empresa>
+    
+    <empresa nombre="Autovelo">
+        <coches>
+            <num_vastidor> BAST-005678 </num_vastidor>
+
+            <marca> MERCEDES </marca>
+
+            <modelo> CLA 45 AMG </modelo>
+
+            <num_puertas> 5 </num_puertas>
+
+            <fecha_fabric.> 04/10/2019 </fecha_fabric.>
+
+            <id_concesionario> CNS-002 </id_concesionario>
+        </coches>
+
+        <concesionarios>
+            <id_concesionario> CNS-002 </id_concesionario>
+
+            <cod_postal> 28001 </cod_postal>
+
+            <ciudad> MADRID </ciudad>
+
+            <num_coches> 21 </num_coches>
+
+            <id_empleado.> EMP002 </id_empleado.>
+        </concesionarios>
+
+        <empleados>
+            <id_emple.> EMP002 </id_emple.>
+
+            <nombre> María   </nombre>
+
+            <ap1> López </ap1>
+
+            <ap2> Fernández </ap2>
+
+            <telefono> 685411475 </telefono>
+
+            <fech_nacim.> 22/07/1990 </fech_nacim.>
+        </empleados>
+
+        <ventas>
+            <id_ventas> VEN002 </id_ventas>
+
+            <id_coche> BAST-005678 </id_coche>
+
+            <id_conce.> CNS-002 </id_conce.>
+
+            <id_empleado> EMP002 </id_empleado>
+
+            <fecha_venta.> 15/02/2025 </fecha_venta.>
+
+            <precio_venta> 100.000$ </precio_venta>
+        </ventas>
+
+    </empresa>
+
+</concesionario>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+
+    <departamento departamentos="marketing">
+
+        <empleado>
+            <nombre>Paco</nombre>
+            <apellidos>Moreno</apellidos>
+            <dni>11111111X</dni>
+            <telefono>685988745</telefono>
+            <cargo>jefe departamento</cargo>
+            <sueldo>3000$</sueldo>
+        </empleado>
+
+        <empleado>
+            <nombre>Manolo</nombre>
+            <apellidos>Quesada</apellidos>
+            <dni>22222222P</dni>
+            <telefono>635598778</telefono>
+            <cargo>director</cargo>
+            <sueldo>1500$</sueldo>
+        </empleado>
+
+    </departamento>
+    
+    <departamento departamentos="desarrollo">
+
+        <empleado>
+            <nombre>Alex</nombre>
+            <apellidos>Moreno</apellidos>
+            <dni>3333333O</dni>
+            <telefono>698745414</telefono>
+            <cargo>Desarrollador front</cargo>
+            <sueldo>2600$</sueldo>
+        </empleado>
+        
+        <empleado>
+            <nombre>Maria</nombre>
+            <apellidos>Quesada</apellidos>
+            <dni>66666666K</dni>
+            <telefono>635214117</telefono>
+            <cargo>Desarrolladore back</cargo>
+            <sueldo>2600$</sueldo>
+        </empleado>
+
+    </departamento>
+</empresa> 

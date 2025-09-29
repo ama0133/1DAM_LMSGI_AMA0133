@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- Ejemplo de xml -->
+<!-- <biblioteca>
+    <libro>
+        <titulo>El quijote</titulo>
+        <autor>Miguel de Cervantes</autor>
+        <paginas>350</paginas>
+    </libro>
+    <libro>
+        <titulo>Ejemplo</titulo>
+        <autor>Paco</autor>
+        <paginas>450</paginas>
+    </libro>
+</biblioteca> -->
+
+<!-- Ejemplo de xml con atributos -->
+ 
+<bibliotecas>
+
+    <biblioteca ciudad="Málaga"> <!-- Los atributos siempre se ponen con el (nombre_atributo= "atributo" ) -->
+        <libro>
+            <titulo>El quijote</titulo>
+            <autor>Miguel de Cervantes</autor>
+            <paginas>350</paginas>
+        </libro>
+        <libro>
+            <titulo>Ejemplo</titulo>
+            <autor>Paco</autor>
+            <paginas>450</paginas>
+        </libro>
+    </biblioteca>
+
+    <biblioteca ciudad="Jaén">
+        <libro>
+            <titulo>El quijote</titulo>
+            <autor>Miguel de Cervantes</autor>
+            <paginas>350</paginas>
+        </libro>
+    </biblioteca>
+
+</bibliotecas>
