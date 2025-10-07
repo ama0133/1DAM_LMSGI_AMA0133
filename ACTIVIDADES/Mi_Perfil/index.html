@@ -6,23 +6,29 @@
     <title>Mi Perfil Profesional</title>
     <meta name="author" content="Alejandro Montilla Aguilar">
     <meta name="description" content="Página personal creada con HTML">
+<!-- Podremos crear un archivo Styles.css y enlazarlo con el archivo index atraves de un link y la ruta del css. -->
 </head>
-
+<!-- Insertamos estilo a la letra y al fondo de la pagina -->
 <body style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color: aqua;">
+<!-- h1, h2 y h3 para los titulos de los apartados y subapartados -->
     <h1>
         Mi Perfil Profesional
     </h1>
+<!-- blockquote para poner una frase simbolica o una frase de motivación y <i> para ponerlo en cursiva  -->
     <blockquote>
         <i>
             "El mayor enemigo del conocimiento no es la ignorancia, sino la ilusión del conocimiento"
         </i>
     </blockquote>
-
+<!-- <hr> crea una linia de borde a borde de la página para poder separar los apartados. -->
     <hr>
     <!-- Sección de datos personales -->
     <h2 id="Datos_personales">
         Datos personales
     </h2>
+<!-- <img> para insertar una imagen, alt para poner un nombre si la ruta de la imagen no funciona, titulo de la foto y width y height para altura y anchura de la imagen -->
+    <img src="./img/Avatar.png" alt="Avatar" title="Avatar foto" width="100px" height="100px">
+<!-- Creamos un <div> para crear un contenedor conde usaremos ul para una lista desordenada y il para hacer los puntos de la lista, donde uso stron para remarcar el telefono, correo. <pre> para hacer que los parrefos les afecte los espacios y tab -->
     <div>
         <ul>
             <li>
@@ -50,16 +56,18 @@
     <h3>
         Sobre mi
     </h3>
-    <span>
-        Me considero una persona responsable, sería y con muchas ganas de trabajar y aprender.
+<!-- <span> para destacar una palabra  -->
+    <p>
+        Me considero una persona <span style="color: blue;">responsable</span> , <span style="color: red;"> sería </span> y con muchas ganas de trabajar y aprender.
         Capacidad de aprendizaje, motivación y flexibilidad para poder conseguir los objetivos propuestos.
-    </span>
+    </p>
 
     <hr>
     <!-- Habilidades personales -->
     <h2>
         Habilidades
     </h2>
+<!-- <p> para hacer parrafos para escribir -->
     <p>
         Responsable y puntual, facilidad para trabajar en equipo, organizado, proactivo en el trabajo y gran capacidad
         de
@@ -68,6 +76,7 @@
     <h3>
         Idiomas
     </h3>
+<!-- <mark> para resaltar lo que queramos como en este caso los idiomas -->
     <mark>
         <strong>
             Castellano:
@@ -85,7 +94,9 @@
 
     <hr>
     <!-- Experiencia Profesional -->
+<!-- Dentro del h2 usasmos un id para que en el apartado de los enlaces usamos una para poder moverme dentro de la página -->
     <h2 id="Experiencia">Experiencia Profesional</h2>
+<!-- <b> para resaltar en negro el parrafo entero -->
     <p><b>Practicas Extracurriculares 2º Grado Superior en Administración de Sistemas Informáticos en Red</b></p>
 
     <p> Entidad: Innovasur | Marzo 2025 - Junio2025</p>
@@ -115,10 +126,13 @@
     <h2>
         Enlaces
     </h2>
+<!-- a para los enlace si le ponemos # como explique anteriormente con la clase id podre ir a donde se encuentre el id la que corresponde. -->
+
     <a href="#Datos_personales">Datos Personales</a><br>
     <a href="#Experiencia">Experiencia Profesional</a><br>
-    <a href="https://ama0133.github.io/1DAM_LMSGI_AMA0133/ACTIVIDADES/Mi_Perfil">Mi_Perfil</a><br>
-    <a href="https://github.com/ama0133/1DAM_LMSGI_AMA0133/tree/main/ACTIVIDADES/Mi_Perfil">Carpeta GitHub activiadad</a>
+<!-- Dentro de a deinimos targete ="_blank" para que se habra en una pagina diferente a la que estamos el enlace. Si usaramos _slef se abriria el enlace ne la misma página de la web.-->
+    <a href="https://ama0133.github.io/1DAM_LMSGI_AMA0133/ACTIVIDADES/Mi_Perfil"  target="_blank">Mi_Perfil</a><br>
+    <a href="https://github.com/ama0133/1DAM_LMSGI_AMA0133/tree/main/ACTIVIDADES/Mi_Perfil"  target="_blank">Carpeta GitHub activiadad</a>
 </body>
 
 </html>
