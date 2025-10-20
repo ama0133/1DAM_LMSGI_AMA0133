@@ -1,0 +1,240 @@
+# Lenguajes de Marcas y Sistemas de Gestión de Información - Tema 3
+
+## 🧱 Estructura de un Documento HTML
+
+Este tema explica la estructura básica de un documento **HTML**, incluyendo el tipo de documento (DTD), la cabecera, el cuerpo y las etiquetas fundamentales que componen una página web.
+
+---
+
+## 1️⃣ Introducción
+Un documento HTML define cómo se muestra el contenido de una página web.  
+Para que los navegadores interpreten correctamente la información, debemos seguir los **estándares HTML**.
+
+**Objetivos:**
+- Conocer la estructura de un documento HTML.
+- Diferenciar los tipos de documentos (DTD).
+- Trabajar con las etiquetas de la cabecera y del cuerpo.
+
+📎 Audio: [“Página web para agencia de viajes”](https://bit.ly/2zecccd)
+
+---
+
+## 2️⃣ Estructura de un documento HTML
+
+Todo documento HTML se compone de tres partes:
+1. **Tipo de documento (DOCTYPE)**
+2. **Cabecera** – `<head>`
+3. **Cuerpo** – `<body>`
+
+### Estructura básica:
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Título de la página</title>
+  </head>
+  <body>
+    <p>Contenido de la web</p>
+  </body>
+</html>
+```
+
+📎 Video: [“Estructura sitio web”](https://bit.ly/2UmSaU4)
+
+---
+
+## 3️⃣ Tipo de Documento (DTD)
+
+La etiqueta `<!DOCTYPE>` define el tipo de documento y versión de HTML usada.
+
+### Tipos en HTML 4.01:
+- **Estricto:**  
+  No permite etiquetas obsoletas.  
+  ```html
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+  ```
+
+- **Transicional:**  
+  Permite etiquetas de versiones anteriores.  
+  ```html
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+  ```
+
+- **Frameset:**  
+  Incluye soporte para “frames” (actualmente en desuso).
+
+### HTML5:
+```html
+<!DOCTYPE html>
+```
+👉 Es la versión más simple y moderna.
+
+---
+
+## 4️⃣ Cabecera `<head>`
+
+Contiene información **no visible** directamente en la web, como metadatos, título, y enlaces a hojas de estilo o scripts.
+
+### Etiquetas importantes:
+| Etiqueta | Función |
+|-----------|----------|
+| `<title>` | Título que aparece en la pestaña del navegador |
+| `<meta>` | Define metadatos |
+| `<link>` | Vincula CSS externo |
+| `<style>` | Define estilos internos |
+| `<script>` | Añade JavaScript interno o externo |
+
+---
+
+### 4.1. Charset (Juego de caracteres)
+Indica la codificación de caracteres:
+```html
+<meta charset="UTF-8">
+```
+
+### Tipos de codificación:
+- **ASCII:** 128 caracteres (básico).
+- **ISO-8859-1:** 256 caracteres.
+- **ANSI:** versión extendida de ISO.
+- **UTF-8:** estándar actual que incluye casi todos los símbolos del mundo.
+
+Ejemplo de uso de entidades HTML:
+```html
+<p>¡Hola mundo! &#33;</p>
+```
+📎 Recurso: [Tabla ASCII](https://www.ascii-code.com/)  
+📎 Video: [Uso del número HTML](https://bit.ly/3aI4O7d)
+
+---
+
+## 5️⃣ Bloques de contenido: Párrafo
+
+Etiqueta principal:
+```html
+<p>Este es un párrafo de texto.</p>
+```
+👉 Crea un bloque de texto dentro del cuerpo de la página.
+
+---
+
+## 6️⃣ Separador y División
+
+| Elemento | Etiqueta | Función |
+|-----------|-----------|---------|
+| Separador | `<hr>` | Línea horizontal para separar secciones |
+| División | `<div>` | Agrupa otros elementos HTML |
+
+Ejemplo:
+```html
+<div>
+  <p>Texto dentro de un div</p>
+</div>
+```
+
+---
+
+## 7️⃣ Divisiones anidadas
+Las divisiones (`<div>`) pueden **anidarse** para estructurar el contenido jerárquicamente:
+```html
+<div>
+  <div>
+    <p>Contenido interno</p>
+  </div>
+</div>
+```
+
+✅ Es recomendable usar `div` solo cuando haya varios elementos a agrupar.
+
+---
+
+## 8️⃣ Cita larga
+Etiqueta:
+```html
+<blockquote>
+  <p>Texto citado con formato especial.</p>
+</blockquote>
+```
+👉 Muestra el texto con márgenes laterales.
+
+📎 Audio: [“Lorem Ipsum”](https://bit.ly/2YboHxD)
+
+---
+
+## 9️⃣ Formateo de texto
+Etiqueta:
+```html
+<pre>
+  Texto preformateado
+  con espacios y tabulaciones
+</pre>
+```
+📎 Video: [Uso de la etiqueta `<pre>`](https://bit.ly/3l3pLhN)
+
+---
+
+## 🔟 Secciones y títulos
+
+HTML permite dividir el contenido mediante títulos jerárquicos:
+
+```html
+<h1>Título principal</h1>
+<h2>Subtítulo</h2>
+<h3>Subapartado</h3>
+```
+👉 `<h1>` es el más grande, `<h6>` el más pequeño.  
+Se deben usar de forma **jerárquica** sin saltarse niveles.
+
+---
+
+## 1️⃣1️⃣ Caso práctico 1: “Información de la empresa”
+Crear una página HTML que contenga:
+- Nombre y apellidos  
+- Estudios  
+- E-mail  
+
+Ejemplo:
+```html
+<h1>Información de la empresa</h1>
+<p><strong>Nombre:</strong> Gloria Pérez</p>
+<p><strong>Estudios:</strong> Ingeniería Informática</p>
+<p><strong>Email:</strong> gloria@empresa.com</p>
+```
+
+---
+
+## 1️⃣2️⃣ Caso práctico 2: “Mejora plantilla trabajadores”
+Requiere mejorar el caso anterior:
+- Añadir comentarios (`<!-- -->`)
+- Usar `<pre>` para sangrar los datos
+- Incluir `<div>` para cada bloque
+- Agregar teléfono
+
+Ejemplo:
+```html
+<div>
+  <pre>
+    Nombre: Gloria Pérez
+    Teléfono: 600123456
+  </pre>
+</div>
+```
+
+---
+
+## 1️⃣3️⃣ Resumen
+- Un documento HTML se divide en **DOCTYPE**, **cabecera** y **cuerpo**.
+- La **cabecera** contiene información invisible (metadatos, título, etc.).
+- El **cuerpo** muestra el contenido (párrafos, divisiones, citas...).
+- Es fundamental definir correctamente el **juego de caracteres** (UTF-8).
+- Los **bloques de contenido** estructuran el texto y mejoran la legibilidad.
+
+---
+
+## 🔗 Webgrafía
+- [W3Schools - HTML](https://www.w3schools.com/)
+- [MDN Web Docs](https://developer.mozilla.org/es/docs/Web)
+- [W3C](https://www.w3.org/)
+- [HTML Living Standard](https://html.spec.whatwg.org/)
+
