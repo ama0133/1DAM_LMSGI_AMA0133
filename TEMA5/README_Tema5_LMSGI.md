@@ -138,33 +138,8 @@ Atributos: `size`, `value`, `selected`.
 
 ---
 
-## 6️⃣ Casos prácticos
 
-### 🧠 Caso práctico 1: “Actividades formativas”
-Crear una tabla con los siguientes datos:
-- Título: **ACTIVIDADES FORMATIVAS**
-- Cabeceras: Curso | Horario | Horas
-- Filas:
-  - HTML – 16:00 a 20:00 – 20h  
-  - CSS – 9:00 a 12:00 – 15h  
-  - Javascript – 16:00 a 20:00 – 20h  
-  - Jquery – mismo horario que Javascript  
-- Pie: total de horas
-
----
-
-### 🧩 Caso práctico 2: “Grupo de controles”
-Uso de `<fieldset>` y `<legend>` para agrupar controles:
-```html
-<fieldset>
-  <legend>Datos personales</legend>
-  <input type="text" name="nombre" required>
-</fieldset>
-```
-
----
-
-## 7️⃣ Resumen
+## 6️⃣ Resumen
 - Las **tablas** organizan la información mediante filas y columnas.
 - Los **formularios** permiten enviar datos al servidor (por `get` o `post`).
 - Se han visto los **controles más comunes**: botones, cajas, checkboxes, radio, select.
