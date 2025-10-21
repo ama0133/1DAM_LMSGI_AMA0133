@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso Practico 2</title>
+</head>
+
+<body>
+    <h1>Formulario de Curriculum</h1>
+    <!-- 
+    FORMULARIO DE DATOS PERSONALES
+    Memoria explicativa:
+    - Este archivo contiene un formulario HTML dividido en secciones mediante <fieldset> y <legend>.
+    - Se usan distintos tipos de inputs según el tipo de dato: texto, número, email, radio, checkbox, password, etc.
+    - El formulario se enviará a "proceso.php" mediante el método POST.
+    - Se han añadido comentarios explicativos sobre cada campo y atributo.
+    - No se incluye tabla, por lo que los puntos referentes a <thead>, <tfoot>, <colgroup>, rowspan y colspan no aplican aquí.
+    - En CSS (no incluido en este archivo) se podría usar estilos para espaciar los campos, mejorar la legibilidad y darle formato a los fieldsets.
+-->
+
+    <form action="proceso.php" method="post">
+        <!-- action: indica el archivo PHP que procesará los datos -->
+        <!-- method="post": envía los datos de manera segura sin mostrarlos en la URL -->
+
+        <!-- Agrupación de campos de datos personales -->
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <!-- input type="text": campo de texto normal -->
+            <!-- name: identifica el dato en el archivo PHP -->
+            <!-- required: hace que el campo sea obligatorio -->
+            <p>Nombre: <input type="text" name="nombre" required></p>
+
+            <!-- Campo de texto para apellidos -->
+            <p>Apellidos: <input type="text" name="apellidos" required></p>
+
+            <!-- input type="number": solo permite números -->
+            <p>Edad: <input type="number" name="edad"></p>
+
+            <!-- input type="radio": permite elegir una sola opción -->
+            <p>Género:</p>
+            <p>
+                <input type="radio" name="sexo" value="h"> Hombre
+                <input type="radio" name="sexo" value="m"> Mujer
+            </p>
+        </fieldset>
+
+        <!-- Agrupación de campos de contacto -->
+        <fieldset>
+            <legend>Contacto</legend>
+
+            <!-- input type="email": valida formato de correo -->
+            <p>Correo Electrónico: <input type="email" name="correo"></p>
+
+            <!-- input type="number": para código postal (nota: maxlength no funciona con type=number) -->
+            <p>Código Postal: <input type="number" name="codigo"></p>
+
+            <!-- input type="text": para dirección -->
+            <p>Dirección: <input type="text" name="direccion"></p>
+
+            <!-- select: lista desplegable con opciones -->
+            <p>Ciudad:
+                <select name="Ciudad" size="1">
+                    <option value="Jaen" selected>Jaén</option>
+                    <option value="Malaga">Málaga</option>
+                </select>
+            </p>
+
+            <!-- input type="password": oculta el texto introducido -->
+            <!-- minlength y maxlength limitan el tamaño de la contraseña -->
+            <p>Contraseña: <input type="password" name="password" maxlength="12" minlength="8"></p>
+        </fieldset>
+
+        <!-- Sección de datos de interés -->
+        <fieldset>
+            <legend>Datos de interés</legend>
+
+            <!-- Estado civil: uso de radio para seleccionar una sola opción -->
+            <p>
+                Estado Civil:
+                <input type="radio" name="respuesta" value="si"> Casado
+                <input type="radio" name="respuesta" value="no"> No Casado
+            </p>
+
+            <!-- Hobbies: uso de checkbox para poder marcar varias opciones -->
+            <p>Hobbies:</p>
+            <p><input type="checkbox" name="opcion1"> Deporte</p>
+            <p><input type="checkbox" name="opcion2"> Cine</p>
+            <p><input type="checkbox" name="opcion3"> Lectura</p>
+            <p><input type="checkbox" name="opcion4"> Correr</p>
+        </fieldset>
+
+        <!-- Comentarios adicionales -->
+        <fieldset>
+            <legend>Comentarios Adicionales</legend>
+
+            <!-- textarea: permite introducir texto largo en varias líneas -->
+            <p>Escribe aquí tus comentarios:
+                <textarea name="comentario" rows="4" cols="27"></textarea>
+            </p>
+        </fieldset>
+
+        <!-- Botones de acción -->
+        <!-- type="submit": envía el formulario -->
+        <!-- type="reset": borra los datos introducidos -->
+        <input type="submit" name="Enviar" value="Enviar">
+        <input type="reset" name="Restaurar" value="Restaurar">
+    </form>
+
+
+    </form>
+</body>
+
+</html>
