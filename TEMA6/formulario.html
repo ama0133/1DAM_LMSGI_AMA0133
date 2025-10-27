@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario - Alejandro Montilla</title>
+</head>
+
+<body>
+    <form action="proceso.php" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <p><b>Fecha: </b> <input type="date" name="date"></p>
+            <p><b>Nombre: </b> <input type="text" name="name" size="45" placeholder="Introduzca su nombre completo"></p>
+            <p><b>Edad: </b> <input type="text" name="years" size="3"></p>
+            <p><b>Correo: </b> <input type="email" name="email"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de interes</legend>
+            <p><b>Estas casado: </b>
+                <input type="radio" name="p1"> Si
+                <input type="radio" name="p2"> No
+            </p>
+            <p><b>Número de hijos: </b> <input type="number" name="hijos" min="0" max="5" size="3"></p>
+            <p><b>Sueldo: (1000€ - 2000€)</b>
+                <input type="range" min="1000" max="2000" step="100">
+            </p>
+            <p><b>Deportes:</b>
+                <input type="checkbox" name="p1"> Baloncesto
+                <input type="checkbox" name="p2"> Fútbol
+                <input type="checkbox" name="p3"> Ciclismo
+            </p>
+            <p><b>Qué color te gusta?</b>
+                <input type="color">
+            </p>
+            <p><b>Matrícula de coche</b>
+                <input type="text" pattern="\d{4}[A-Z]{3}">
+            </p>
+            <p><b>Porcentaje del proyecto finalizado</b>
+                <progress max="100" value="35">
+            </p>
+            
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+
+</html>
