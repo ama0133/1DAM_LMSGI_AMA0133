@@ -1,0 +1,34 @@
+*{
+    color: blue;/*Todos los elementos tendran el color azul*/
+}
+
+p{
+    text-align: center;/*A los parrafos se alinearan al centro*/
+}
+
+.miclase{
+    border: solid 1px red;/*se ha creado una clase llamada miparrafo y se ha aplicado al parrafo 3*/
+}
+
+#miid{
+    background-color: cyan;
+}
+
+ul li {
+    background-color: gray;
+}
+h1,h2{
+    border: solid 3px green
+}
+p>a{
+     background-color: yellow;/*Selector hijo donde se indica que solo los enlaces que sean hijos directos de <p> deben tener el fondo amarilla.  */
+}
+p+div{
+    border: solid 2px blue;/*Selector adyacente que indica que solo los div que esten justo despues de un parrafo tendran borde azul*/
+}
+p[lang="es"]{
+    background-color: red;/*Selector de atributo que indica que los parrafos con atributo lang="es" tendran fondo rojo*/
+}
+p[lang="en"]{
+    background-color: orange;/*Selector de atributo que indica que los parrafos con atributo lang="en" tendran fondo naranja*/
+}
