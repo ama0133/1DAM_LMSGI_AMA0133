@@ -1,0 +1,87 @@
+/* Estilos base para la página (simulando la "fuente normal de la página") */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px; /* Esta es la "fuente normal" */
+    background-color: #f4f4f4; /* Un fondo suave para que la tabla destaque */
+}
+
+/* * Requisito 1:
+ * - Ocupar siempre el 50% del ancho de la página.
+ * - Estar centrada.
+ */
+.tabla-destinos {
+    width: 50%;
+    margin: 40px auto; /* 'auto' en los márgenes izq/der la centra horizontalmente */
+    border-collapse: collapse; /* Une los bordes de las celdas para un look limpio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Pequeña sombra para un efecto moderno */
+}
+
+/* * Requisito 2:
+ * - Título (caption) y cabecera (th) con fuente Verdana.
+ * - Título con letras más separadas.
+ */
+.tabla-destinos caption,
+.tabla-destinos th {
+    font-family: Verdana, sans-serif;
+}
+
+.tabla-destinos caption {
+    font-weight: bold;
+    font-size: 1.8em; /* Un tamaño visualmente acorde a la imagen */
+    color: #0000FF; /* Azul, como en la imagen */
+    letter-spacing: 4px; /* Letras más separadas */
+    padding-bottom: 15px; /* Espacio antes de la tabla */
+}
+
+/* * Requisito 3:
+ * - Tamaño de la fuente de la cabecera 1.5 veces el normal.
+ */
+.tabla-destinos th {
+    font-size: 1.5em; /* 1.5 * 16px (fuente normal) = 24px */
+    background-color: #008000; /* Fondo verde de la cabecera */
+    color: white; /* Texto blanco */
+}
+
+/* * Requisito 5:
+ * - Espacio entre el contenido y el borde de la celda (padding).
+ */
+.tabla-destinos th,
+.tabla-destinos td {
+    padding: 12px 15px;
+}
+
+/* * Requisito 4:
+ * - Orígenes y destinos alineados a la izquierda.
+ * - Precios alineados a la derecha.
+ */
+.tabla-destinos th:nth-child(1), /* Columna 1 (Origen) */
+.tabla-destinos td:nth-child(1),
+.tabla-destinos th:nth-child(2), /* Columna 2 (Destino) */
+.tabla-destinos td:nth-child(2) {
+    text-align: left;
+}
+
+.tabla-destinos th:nth-child(3), /* Columna 3 (Precio) */
+.tabla-destinos td:nth-child(3) {
+    text-align: right;
+}
+
+/* * Requisito 6:
+ * - Filas pares (even) con un color, impares (odd) con otro.
+ * - (Usamos :nth-child(odd) para las impares y :nth-child(even) para las pares)
+ */
+.tabla-destinos tbody tr:nth-child(odd) {
+    background-color: #FFFFFF; /* Fila impar: blanca */
+}
+
+.tabla-destinos tbody tr:nth-child(even) {
+    background-color: #EBF1F5; /* Fila par: gris/azul claro (como en la imagen) */
+}
+
+/* * Requisito 6 (continuación):
+ * - Cuando el cursor se coloque encima de una fila, debe cambiar de color.
+ */
+.tabla-destinos tbody tr:hover {
+    background-color: #FFFFE0; /* Amarillo pálido al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}

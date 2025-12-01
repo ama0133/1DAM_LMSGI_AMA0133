@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web - Práctica Tema 9</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="menu-principal">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Ejemplos</a>
+                <div class="menu-principal">
+                    <a href="">Menú Horizontal</a>
+                    <a href="">Viajes</a>
+                </div>
+            </li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Bienvenidos a mi página web</h1>
+        <p>Aprendiendo CSS paso a paso</p>
+    </header>
+
+    <div class="contenedor">
+
+        <section class="tarjeta sobre-mi">
+            <div class="info">
+                <h2>Sobre mí</h2>
+                <p>
+                    Me llamo Alejandro Montilla Aguilar y soy estudiante de 1º de DAM. Me encantaria en un futuro dedicarme a la
+                    IA y BIGDATA.
+                </p>
+            </div>
+            <img src="img/avatar.jpg" alt="Avatar" class="avatar-flotante">
+        </section>
+
+        <section class="tarjeta redes">
+            <h2>Redes sociales</h2>
+            <div class="botones">
+                <a href="#" class="btn azul">Instagram</a>
+                <a href="https://github.com/dashboard" class="btn azul-oscuro">GitHub</a>
+            </div>
+        </section>
+
+        <section class="texto-columnas">
+            <h3>Texto en multicolumnas</h3>
+            <section class="texto-columnas">
+                <h3>El mundo Multiplataforma (DAM)</h3>
+                <div class="contenido-columnas">
+                    <p>
+                        El Desarrollo de Aplicaciones Multiplataforma es un campo fascinante. Nos permite crear software
+                        versátil capaz de ejecutarse en móviles, tablets y ordenadores sin reescribir todo el código.
+                        Gracias a los frameworks modernos, podemos llevar nuestra lógica a cualquier dispositivo.
+                    </p>
+                    <p>
+                        Aunque trabajemos con lógica nativa o híbrida, el diseño de interfaces sigue siendo vital. El
+                        uso correcto de estilos, transiciones y una buena estructura visual es lo que diferencia una
+                        aplicación funcional de una experiencia de usuario profesional e intuitiva.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <section class="hobbies">
+            <h3>Mis hobbies</h3>
+            <div class="lista-hobbies">
+                <div class="hobby-item">🏹 Tiro con arco</div>
+                <div class="hobby-item">🎮 Video Juegos</div>
+                <div class="hobby-item">💻 Programar</div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 - Alejandro Montilla Aguilar</p>
+    </footer>
+
+</body>
+
+</html>
