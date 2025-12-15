@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="Ejemplo1.css" type="text/css"?>
+<listaClientes>
+    <cliente cif="5676443B">
+        <nombre>Mercasa</nombre>
+        <diasentrega>Lunes</diasentrega>
+        <diasentrega>Martes</diasentrega>
+    </cliente>
+
+    <cliente cif="5121554B">
+        <nombre>Acer SL</nombre>
+        <diasentrega>Lunes</diasentrega>
+    </cliente>
+</listaClientes>
