@@ -1,0 +1,26 @@
+/*ALEJANDRO MONTILLA AGUILAR*/
+*{
+    box-sizing: border-box;
+    display: block;
+}
+listacomponentes{
+    width: 300px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: solid 4px rgb(9, 9, 166);
+    width: 300px;
+}
+
+componente:before {
+    display: block;
+    content: "Componentes de Informática";
+    color: white;
+    background-color: black;
+    width: 280px;
+}
+
+fabricante, tienda, contenido {
+    border-bottom: solid 1px black;
+}
+

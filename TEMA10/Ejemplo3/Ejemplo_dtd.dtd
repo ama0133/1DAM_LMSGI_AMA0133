@@ -1,4 +1,4 @@
-<!ELEMENT biblioteca (libro)+>
+<!ELEMENT biblioteca (libro+)>
 <!ELEMENT libro (nombre+,autor+,editorial?, paginas, (precio|precio_con_iva))>
 <!ELEMENT nombre (#PCDATA)>
 <!ELEMENT autor (#PCDATA)>
