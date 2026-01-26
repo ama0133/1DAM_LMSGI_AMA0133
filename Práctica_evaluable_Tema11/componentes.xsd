@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- ALEJANDRO MONTILLA AGUILAR -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="listacomponentes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="componente" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="marca" type="xs:string"></xs:element>
+                            <xs:element name="modelo" type="xs:string"></xs:element>
+                            <xs:element name="categoria" type="tipoCategoria"></xs:element>
+                            <xs:element name="precio" type="tipoPrecio"></xs:element>
+                            <xs:choice minOccurs="0">
+                                <xs:element name="stock" type="xs:unsignedShort"></xs:element>
+                                <xs:element name="cantidad" type="xs:unsignedShort"></xs:element>
+                            </xs:choice>
+                            <xs:element name="fecha_alta" type="xs:date"></xs:element>
+                            <xs:element name="garantia" type="tipoGrantia" minOccurs="0"></xs:element>
+                            <xs:element name="color" type="xs:string" minOccurs="0"></xs:element>
+                            <xs:element name="cliente_reserva" type="tipoCliente" minOccurs="0" maxOccurs="2"></xs:element>
+                            <xs:element name="extras" type="dosExtras" minOccurs="0"></xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="tipo" type="xs:string" use="required"></xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- TIPOS PERSONALIZADOS -->
+    <!-- TIPO CATEGORIA -->
+    <xs:simpleType name="tipoCategoria">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="CPU"></xs:enumeration>
+            <xs:enumeration value="GPU"></xs:enumeration>
+            <xs:enumeration value="RAM"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- TIPO PRECIO -->
+    <xs:simpleType name="tipoPrecio">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="1"></xs:minInclusive>
+            <xs:maxInclusive value="300"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- TIPO GARANTIA -->
+    <xs:simpleType name="tipoGrantia">
+        <xs:restriction base="xs:unsignedByte">
+            <xs:minInclusive value="6"></xs:minInclusive>
+            <xs:maxInclusive value="60"></xs:maxInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- TIPO CLIENTE -->
+    <xs:simpleType name="tipoCliente">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- TIPO EXTRAS -->
+    <xs:simpleType name="tipoExtras">
+        <xs:list itemType="xs:string"></xs:list>
+    </xs:simpleType>
+
+    <!-- EXTRAS -->
+    <xs:simpleType name="dosExtras">
+        <xs:restriction base="tipoExtras">
+            <xs:maxLength value="2"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

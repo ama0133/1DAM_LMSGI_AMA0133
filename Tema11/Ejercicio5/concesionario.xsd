@@ -29,6 +29,7 @@
         </xs:complexType>
     </xs:element>
 
+
     <!-- TIPOS PERSONALIZADOS -->
     <!-- TIPO COMBUSTIBLE -->
     <xs:simpleType name="tipoCombustible">
